@@ -1,15 +1,14 @@
 import { navigate } from "./navigate";
 
-
 export function attachEvent() {
     const goHome = document.querySelector('#goHome');
-    const goGallety = document.querySelector('#goGallery');
+    const goGallery = document.querySelector('#goGallery');
 
     if (goHome) {
-        goHome.addEventListener('click', () => navigate("/home"))
+        goHome.addEventListener('click', () => navigate('/home'))
     }
 
-    if (goGallety) {
-        goGallety.addEventListener('click', () => navigate("/gallery"))
+    if (goGallery) {
+        goGallery.addEventListener('click', () => navigate("/gallery"))
     }
 }
