@@ -112,7 +112,7 @@ header span {
 /* Планшет */
 @media (max-width: 768px) {
     #gallery_list {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, 2fr);
         gap: 12px;
     }
 }

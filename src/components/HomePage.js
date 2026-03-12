@@ -2,7 +2,11 @@ export function HomePage() {
     return `
 
     <header>
+
         <div class="header_container">
+
+        <div id="login-btn">
+        <span>login</span></div>
             <div class="header_text_container">
                 <div class="Kavro_title_header">
                     <span><h3>K</h3></span>

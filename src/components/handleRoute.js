@@ -6,9 +6,14 @@ export function handleRoute() {
 
     if (path === "/gallery") {
         state.currentPage = "gallery";
-    }else {
-        state.currentPage = "home"
+    } else if (path === '/home') {
+        state.currentPage = 'home'
+    } else if (path === '/auth') {
+        state.currentPage = 'auth'
+    } else {
+        state.currentPage = 'home'
     }
+
 
     render();
 }

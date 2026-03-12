@@ -3,6 +3,7 @@ import { navigate } from "./navigate";
 export function attachEvent() {
     const goHome = document.querySelector('#goHome');
     const goGallery = document.querySelector('#goGallery');
+    const goLogin = document.querySelector('#login-btn')
 
     if (goHome) {
         goHome.addEventListener('click', () => navigate('/home'))
@@ -11,4 +12,9 @@ export function attachEvent() {
     if (goGallery) {
         goGallery.addEventListener('click', () => navigate("/gallery"))
     }
+
+    if (goLogin) {
+        goLogin.addEventListener('click', () => navigate('/auth'))
+    }
+
 }

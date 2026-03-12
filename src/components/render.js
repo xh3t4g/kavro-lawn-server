@@ -4,6 +4,7 @@ import { HomePage } from "./HomePage";
 import { renderGallery } from "./renderGallery";
 import { state } from "./state";
 import { images } from "./GalleryIMG";
+import { AuthPage } from "./AuthPage";
 
 export function render() {
     const app = document.querySelector('#app');
@@ -19,6 +20,11 @@ export function render() {
         import ('../css/gallery.css');
 
         renderGallery(images);
+    }
+
+    if (state.currentPage === 'auth') {
+        app.innerHTML = AuthPage();
+        import ('../css/auth.css');
     }
 
     attachEvent();
